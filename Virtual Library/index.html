@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Library</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+</head>
+<body>
+
+<header>
+  <!-- <div class="header"> -->
+    <div class="header-left">
+
+      <!-- <div class="logo">
+        <img src="img/virtual-library-book-logo.png" alt="logo">
+      </div> -->
+
+      <div class="BrandName">The <br><span>Growing </span>Devs</div>
+      <!-- /////////////////////////// -->
+      
+      <nav>
+        <ul>
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">Books</a></li>
+         
+          <!-- /////////////////////// -->
+        <div class="dropdown">
+          <button class="js-content1">Collections
+                <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content js-dropdown1">
+            <a href="">content</a>
+            <a href="">content</a>
+            <a href="">content</a>
+            <a href="">content</a>
+          </div>
+        </div>
+        <!-- //////////////////////// -->
+        <div class="dropdown">
+          <button class="js-content2">Categories
+                <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content js-dropdown2">
+            <a href="">content</a>
+            <a href="">content</a>
+            <a href="">content</a>
+            <a href="">content</a>
+          </div>
+        </div>
+        <!-- //////////////////////// -->
+        <div class="dropdown">
+          <button class="js-content3">Pages
+                <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content js-dropdown3">
+            <a href="">content</a>
+            <a href="">content</a>
+            <a href="">content</a>
+            <a href="">content</a>
+          </div>
+        </div>
+        <!-- /////// /////////////////-->
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </nav>
+
+    </div>
+  <!-- ///////////////////////////// -->
+  <div class="hamburger-icon">
+    <span class="span-1"></span>
+    <span class="span-2"></span>
+    <span class="span-3"></span>
+  </div>
+  <!-- ///////////////////////////// -->
+  <div class="header-btn">
+    <button>
+      <i class="fa-solid fa-user"></i>
+      Login / Register
+    </button>
+  </div>
+  <!-- //////////////////////////// -->
+<!-- </div> -->
+</header>
+<!-- ////////////////////////////////////////// -->
+
+<main>
+  <section class="sec-1">
+  <div>
+    <h1>Huge collection <br> of <span>best books</span></h1>
+    <input id="search" type="text" placeholder="Search for books...">
+  </div>
+  <!-- image -->
+    <img src="img/virtual-library-hero.png" alt="A lady with a book">
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="sec-2">
+    <p class="categories">Categories</p>
+    <h2>Our Book Collections</h2>
+
+    <div class="book-categories">
+      <div class="action-and-adventure">
+        Action and Adventure.
+        <div class="view-collection">
+         📚 View collection
+        </div>
+      </div>
+      <div class="technology">
+        📚Technology.
+        <div class="view-collection">
+          📚View collection
+        </div>
+      </div>
+      <div class="nature">
+        📚Nature.
+        <div class="view-collection">
+          📚View collection
+        </div>
+      </div>
+      <div class="health">
+        📚Health.
+        <div class="view-collection">
+          View collection
+        </div>
+      </div>
+      <div class="fiction">
+        📚Fiction.
+        <div class="view-collection">
+          📚View collection
+        </div>
+      </div>
+      <div class="fantasy">
+        📚Fantasy.
+        <div class="view-collection">
+          📚View collection
+        </div>
+      </div>
+      <div class="science">
+        📚Science.
+        <div class="view-collection">
+          View collection
+        </div>
+      </div>
+    </div> <!--  -->
+
+    <div id="book-list"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+   <section class="sec-3">
+    <p class="testimonials">Testimonials</p>
+    <h2>What Customer Say</h2>
+
+    <div class="review-container">
+      <p class="review-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt modi sit.</p>
+      <p class="reviewer">Udoka Kasie</p>
+      <p class="reviewer-job">Frontend Dev</p>
+      <div class="img-div">
+      <img class="reviewer-img" src="img/udoka-kasie.jpg" alt="">
+    </div>
+    </div>
+   </section>
+</main>
+
+   <script src="index.js"></script>
+</body>
+</html>
