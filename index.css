@@ -78,6 +78,7 @@ header {
   .BrandName {
     font-size: 1.6rem;
     line-height: 1.5rem;
+    text-align: center;
   }
   /* .BrandName span {
     color:mediumspringgreen;
@@ -171,6 +172,7 @@ header {
   /* ///////// Main /////////// */
   .sec-1 {
     display: flex;
+    justify-content: space-between;
     border: 1px solid #000;
     padding-left: 0.5rem;
     padding-top: 2rem;
@@ -244,16 +246,29 @@ header {
     padding-top: 2rem;
     font-weight: bold;
   }
+  .action-and-adventure {
+    background: url(img/todo-img.jpg);
+    object-position: center;
+    object-fit: cover;
+  }
+  .nature {
+    background: url(img/IMG_4806.JPG);
+    object-position: center;
+    object-fit: cover;
+  }
   .view-collection {
-    width: 150px;
-    height: 25px;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    font-weight: normal;
-    font-size: 0.8rem;
     margin: auto;
     margin-top: 1rem;
+  }
+  .view-collection button {
+    border: 1px groove #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 20px ;
+    padding: 5px 15px;
+  }
+  .view-collection a {
+    text-decoration: none;
   }
   
 
@@ -280,7 +295,7 @@ header {
   .book-item h3 {
     font-size: 1.2em;
   } */
-  /*//////////////////*/
+  /*///Testimonials///*/
   .review-container {
     width: 70%;
     height: 250px;
@@ -376,16 +391,177 @@ header {
   body {
     background-color: yellow;
    }
+   .dropdown a {
+    font-size: 0.8rem;
+   }
+   .dropdown button {
+    font-size: 0.8rem;
+    font-weight: bold;
+   }
+    nav {
+      display: contents;
+    }
+    nav ul {
+      display: flex;
+    }
+    nav ul li a {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .hamburger-icon {
+      display: none;
+    }
+   .sec-1 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+   }
+   .sec-1 h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .sec-1 input {
+    width: 320px;
+    height: 45px;
+  }
+  .sec-1 img {
+    width: 250px;
+    height: 250px;
+  }
+  .sec-2 .categories,
+  .sec-3 .testimonials{
+    padding: 4px 12px;
+    border-radius: 17px;
+    font-size: 1.3rem;
+  }
+  .sec-2 h2,
+  .sec-3 h2 {
+    font-size: 1.8rem;
+  }
+  /* // */
+  .book-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+  .science {
+    grid-column: span 2;
+  }
+  /* testimonials */
+  .review-content {
+    font-size: 1.1rem;
+    padding-top: 1.5rem;
+    line-height: 1.5rem;
+    padding-inline-start: 4rem;
+    padding-inline-end: 4rem;
+  }
+   .reviewer {
+    font-size: 1rem;
+  } 
+  .reviewer-job {
+    font-size: 1rem;
+  }
+  .img-div {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    left: -5px;
+  }
+  .reviewer-img {
+    width: 70px;
+    height: 70px;
+  }
 }
 /* Laptop */
 @media (min-width: 1024px) {
   body {
     background-color: red;
    }
+   .dropdown a {
+    font-size: 1rem;
+   }
+   .dropdown button {
+    font-size: 1rem;
+    font-weight: bold;
+   }
+    nav ul li a {
+      font-size: 1rem;
+    }
+    .sec-1 h1 {
+      font-size: 3.5rem;
+    }
+    .sec-1 input {
+      width: 445px;
+      font-size: 0.9rem;
+    }
+    .sec-1 img {
+      width: 350px;
+      height: 350px;
+    }
+    /*  */
+    .img-div {
+      background-color: red;
+    }
 }
 /* Laptop Large */
 @media (min-width: 1440px) {
   body {
     background-color: lime;
    }
+   .sec-1 {
+    padding-top: 6rem;
+    padding-inline-start: 9rem;
+    padding-inline-end: 9rem;
+   }
+   .sec-1 h1 {
+    font-size: 5rem;
+  }
+  .sec-1 input {
+    width: 570px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+  }
+  .sec-1 img {
+    width: 700px;
+    height: 700px;
+  }
+/*  */
+  .sec-2 .categories,
+  .sec-3 .testimonials{
+    padding: 7px 15px;
+    border-radius: 25px;
+    font-size: 1.9rem;
+  }
+  .sec-2 h2,
+  .sec-3 h2 {
+    font-size: 3.5rem;
+  }
+   /* // */
+   .book-categories {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+  }
+  .action-and-adventure,
+  .technology,
+  .health,
+  .nature,
+  .health,
+  .fiction,
+  .non-fiction,
+  .fantasy,
+  .science {
+    height: 500px;
+    font-size: 1.5rem;
+  }
+  .view-collection {
+    border-radius: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ACTION AND ADVENTURE */
+.all-categories h1{
+  font-size: 1.5rem;
+  text-align: center;
 }
