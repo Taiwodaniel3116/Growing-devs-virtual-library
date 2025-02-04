@@ -26,7 +26,7 @@ const books = [
   {
     title: "Book title 1",
     author: "Author 1",
-    image: "img/book1.jpg",
+    image: "img/book11.jpg",
     category: "Action and Adventure",
     description:"sit amet ",
      page: "action.html"
@@ -66,7 +66,7 @@ const books = [
   {
     title: "Book Title 6",
     author: "Author 6",
-    image: "img/book6.jpg",
+    image: "",
     category: "Fantasy",
     description: " Title 6.",
      page: "fantasy.html"
@@ -82,7 +82,7 @@ const books = [
   {
     title: "Book Title 8",
     author: "Author 8",
-    image: "img/book8.jpg",
+    image: "img/book7.jpg",
     category: "Technology",
     description: "Advance your knowledge in tech.",
      page: "technology.html"
@@ -104,16 +104,46 @@ function displayBooks(filter = "") {
       const bookItem = document.createElement("div");
       bookItem.classList.add("book-item");
       bookItem.innerHTML = `
+        <div class= "book-content-container">
           <h3>${book.category}.</h3>
           <a href=${book.page}><button class="view-collection-button">📚View collection</button></a>
           <div>
-          <img src="${book.image}" alt="${book.title}">
+          <img src="alt="${book.title}">
           </div>
-          <p> ${book.description}</p>
+        </div>
       `;
+    
+      if(book.category === "Action and Adventure") {
+        bookItem.style.background = "url(img/book1.jpg)";
+
+      } else if (book.category === "Fiction") {
+        bookItem.style.background = "url(img/book2.jpg)";
+
+      } else if (book.category === "Non Fiction") {
+        bookItem.style.background = "url(img/book3.jpg)";
+
+      } else if (book.category === "Health") {
+        bookItem.style.background = "url(img/book4.jpg)";
+
+      } else if (book.category === "Biography") {
+        bookItem.style.background = "url(img/book5.jpg)";
+
+      } else if (book.category === "Fantasy") {
+        bookItem.style.background = "url(img/book6.jpg)";
+
+      }  else if (book.category === "Science") {
+        bookItem.style.background = "url(img/book7.jpg)";
+
+      } else if (book.category === "Technology") {
+        bookItem.style.background = "url(img/book8.jpg)";
+      }
+      bookItem.style.backgroundPosition = "center";
+
+    /* Add book-item into book-categories div in HTML file */
       bookCategories.appendChild(bookItem);
   });
 }
+
 //Input Search Action...
 const searchAction = document.getElementById("search");
   searchAction.addEventListener('keyup', (event) => {
