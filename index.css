@@ -7,6 +7,14 @@
   font-family: poppins;
   /* font-weight: bold; */
 }
+button {
+  cursor: pointer;
+}
+button:hover {
+  transform: scaleX(95%);
+  transition: 0.6s;
+  filter: drop-shadow(0 0.5em 0.5em black);
+}
 body {
   background-color: burlywood;  
 }
@@ -222,10 +230,10 @@ header {
     text-align: center;
     font-size: 1rem;
   }
-  .book-categories {
+  /* .book-categories {
     display: grid;
     row-gap: 1rem;
-  }
+  } */
   .action-and-adventure,
   .technology,
   .health,
@@ -251,50 +259,63 @@ header {
     object-position: center;
     object-fit: cover;
   }
+  .technology {
+    background: url(img/tech-img.jpeg);
+    background-position: center;
+  }
   .nature {
     background: url(img/IMG_4806.JPG);
-    object-position: center;
-    object-fit: cover;
+    background-position: center;
   }
-  .view-collection {
-    margin: auto;
-    margin-top: 1rem;
+  .fiction {
+    background: url(img/fiction-img.jpeg);
+    background-position: center;
   }
-  .view-collection button {
-    border: 1px groove #fff;
-    color: #fff;
-    background-color: transparent;
-    border-radius: 20px ;
-    padding: 5px 15px;
-  }
-  .view-collection a {
-    text-decoration: none;
+  .fantasy {
+    background: url(img/fantasy-img.jpeg);
+    background-position: center;
   }
   
-
-  /* #book-list {
+/*  */
+   #book-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
-    padding: 20px;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    gap: 1rem;
   }
   .book-item {
-    background: #000;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
+    width: 90%;
+    height: 350px;
+    background: #fff;
+    color: #000;
+    margin: auto;
+    border-radius: 30px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding-top: 2rem;
+    font-weight: bold;
   }
-  
-  .book-item img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
   .book-item h3 {
     font-size: 1.2em;
-  } */
+    margin-top: 0;
+    color: #000;
+  }
+  .view-collection-button{
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px groove #fff;
+    padding: 5px 15px;
+    margin-bottom: 1.5rem;
+  }
+  .book-item img {
+    width: 90%;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  } 
+  .book-item p {
+    color: #000;
+  }
   /*///Testimonials///*/
   .review-container {
     width: 70%;
@@ -354,6 +375,10 @@ header {
     height: 170px;
     padding-right: 0;
   }
+  /* Categories */
+  .book-item {
+    height: 380px;
+  }
   .review-content {
    padding-inline-start: 0.5rem;
    padding-inline-end: 0.5rem;
@@ -378,6 +403,11 @@ header {
     width: 190px;
     height: 190px;
   }
+  /* Categories */
+  .book-item {
+    height: 410px;
+  }
+  /*  */
   .review-content {
     padding-inline-start: 0.9rem;
     padding-inline-end: 0.9rem;
@@ -439,7 +469,7 @@ header {
     font-size: 1.8rem;
   }
   /* // */
-  .book-categories {
+  #book-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
@@ -498,10 +528,17 @@ header {
       width: 350px;
       height: 350px;
     }
-    /*  */
-    .img-div {
-      background-color: red;
-    }
+    /* Categories */
+  .book-item {
+    height: 450px;
+  }
+  .book-item h3 {
+    font-size: 1.5rem;
+  }
+  .view-collection-button{
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
 }
 /* Laptop Large */
 @media (min-width: 1440px) {
@@ -538,11 +575,11 @@ header {
     font-size: 3.5rem;
   }
    /* // */
-   .book-categories {
+   #book-categories {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
   }
-  .action-and-adventure,
+  /* .action-and-adventure,
   .technology,
   .health,
   .nature,
@@ -553,10 +590,17 @@ header {
   .science {
     height: 500px;
     font-size: 1.5rem;
-  }
-  .view-collection {
+  } */
+  /* .view-collection {
     border-radius: 20px;
     font-size: 1.2rem;
+  } */
+  .book-item h3 {
+    font-size: 1.5rem;
+  }
+  .view-collection-button{
+    font-size: 1.1em;
+     border-radius: 25px
   }
 }
 
