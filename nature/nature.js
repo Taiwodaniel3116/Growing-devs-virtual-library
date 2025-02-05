@@ -79,26 +79,23 @@
        natureContainer.innerHTML=natureBooks
        .map((x)=>{
         // destructure items
-        const{title,author,id ,image,category,description}=x
+        const {title,author,id ,image,category,description}= x
 
         return `
         <div class="nature-card">
           <img class="img-fluid" src=${image} />
             <figcaption>
-              <h1>${title}</h1>
-              <p class="author">Author:${author}</p>
+              <h1 class="title">${title}</h1>
+              <p class="author">${author}</p>
               <p>${category}</p>
               <p>${description}</p>
             </figcaption>
       </div>
         `
-       }).join(' ')
+       }).join('')
   }
 
 
-
+// on first render this function runs
   generateNature()
-  //  natureBooks.map((natureBook,index)=>{
-  //     natureBook.innerHTML=`<h1>${natureBook.title}</h1>`
-  // })
-
+  
