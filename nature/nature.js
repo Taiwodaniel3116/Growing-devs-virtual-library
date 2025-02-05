@@ -62,15 +62,16 @@
     "image": "img/nature-img/7.png",
     "category": "Nature",
     "description": "A captivating journey into the intelligence and emotional lives of octopuses, revealing their surprising complexity."
-  },
-  {
-    "id": 9,
-    "title": "H is for Hawk",
-    "author": "Helen Macdonald",
-    "image": "img/nature-img/4.png",
-    "category": "Nature",
-    "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
   }
+  //Commented this out so we could have an even number of books on the screen 
+  // {
+  //   "id": 9,
+  //   "title": "H is for Hawk",
+  //   "author": "Helen Macdonald",
+  //   "image": "img/nature-img/4.png",
+  //   "category": "Nature",
+  //   "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
+  // }
 ]
   const natureContainer = document.querySelector("#nature-book")
 
