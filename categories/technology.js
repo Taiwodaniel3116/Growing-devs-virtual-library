@@ -1,3 +1,6 @@
+import { activate } from "./nature.js";
+import { categoryBooks } from "./nature.js";
+
 categoryBooks=[
     {
       "id": "T001",
@@ -65,7 +68,7 @@ categoryBooks=[
     }
   ]
   
-  activate()
+  activate();
 
 
 

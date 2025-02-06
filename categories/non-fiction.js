@@ -1,3 +1,6 @@
+ import { activate } from "./nature.js";
+ import { categoryBooks } from "./nature.js";
+ 
  categoryBooks =[
     {
       "id": "NF001",
@@ -64,4 +67,6 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/71Y5P9B0rwL.jpg"
     }
   ]
+
+  activate();
   
