@@ -59,9 +59,9 @@ const books = [
     title: "Book Title 5",
     author: "Author 5",
     image: "img/book5.jpg",
-    category: "Biography",
+    category: "Nature",
     description: " Title 5.",
-    page: "biography.html"
+    page: "nature.html"
   },
   {
     title: "Book Title 6",
@@ -104,13 +104,11 @@ function displayBooks(filter = "") {
       const bookItem = document.createElement("div");
       bookItem.classList.add("book-item");
       bookItem.innerHTML = `
-        <div class= "book-content-container">
           <h3>${book.category}.</h3>
           <a href=${book.page}><button class="view-collection-button">📚View collection</button></a>
           <div>
           <img src="alt="${book.title}">
           </div>
-        </div>
       `;
     
       if(book.category === "Action and Adventure") {
@@ -125,7 +123,7 @@ function displayBooks(filter = "") {
       } else if (book.category === "Health") {
         bookItem.style.background = "url(img/book4.jpg)";
 
-      } else if (book.category === "Biography") {
+      } else if (book.category === "Nature") {
         bookItem.style.background = "url(img/book5.jpg)";
 
       } else if (book.category === "Fantasy") {
