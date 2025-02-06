@@ -26,7 +26,7 @@ const books = [
   {
     title: "Book title 1",
     author: "Author 1",
-    image: "img/book11.jpg",
+    image: "img/book1.jpg",
     category: "Action and Adventure",
     description:"sit amet ",
      page: "action.html"
@@ -42,7 +42,7 @@ const books = [
   {
     title: "Book Title 3",
     author: "Author 3",
-    image: "images/book2.jpg",
+    image: "img/book3.jpg",
     category: "Non Fiction",
     description: " Title 2.",
      page: "non-fiction.html"
@@ -50,7 +50,7 @@ const books = [
   {
     title: "Book Title 4",
     author: "Author 4",
-    image: "images/book4.jpg",
+    image: "img/book4.jpg",
     category: "Health",
     description: " Title 4.",
      page: "health.html"
@@ -66,7 +66,7 @@ const books = [
   {
     title: "Book Title 6",
     author: "Author 6",
-    image: "",
+    image: "img/book6.jpg",
     category: "Fantasy",
     description: " Title 6.",
      page: "fantasy.html"
@@ -82,7 +82,7 @@ const books = [
   {
     title: "Book Title 8",
     author: "Author 8",
-    image: "img/book7.jpg",
+    image: "img/book8.jpg",
     category: "Technology",
     description: "Advance your knowledge in tech.",
      page: "technology.html"
@@ -107,33 +107,33 @@ function displayBooks(filter = "") {
           <h3>${book.category}.</h3>
           <a href=${book.page}><button class="view-collection-button">📚View collection</button></a>
           <div>
-          <img src="alt="${book.title}">
+          <img src= "${book.image}" alt="${book.title}">
           </div>
       `;
     
       if(book.category === "Action and Adventure") {
-        bookItem.style.background = "url(img/book1.jpg)";
+        bookItem.style.background = "maroon";
 
       } else if (book.category === "Fiction") {
-        bookItem.style.background = "url(img/book2.jpg)";
+        bookItem.style.background = "limegreen";
 
       } else if (book.category === "Non Fiction") {
-        bookItem.style.background = "url(img/book3.jpg)";
+        bookItem.style.background = "yellow";
 
       } else if (book.category === "Health") {
-        bookItem.style.background = "url(img/book4.jpg)";
+        bookItem.style.background = "blue";
 
       } else if (book.category === "Nature") {
-        bookItem.style.background = "url(img/book5.jpg)";
+        bookItem.style.background = "green";
 
       } else if (book.category === "Fantasy") {
-        bookItem.style.background = "url(img/book6.jpg)";
+        bookItem.style.background = "crimson";
 
       }  else if (book.category === "Science") {
-        bookItem.style.background = "url(img/book7.jpg)";
+        bookItem.style.background = "blue";
 
       } else if (book.category === "Technology") {
-        bookItem.style.background = "url(img/book8.jpg)";
+        bookItem.style.background = "dodgerblue";
       }
       bookItem.style.backgroundPosition = "center";
 
