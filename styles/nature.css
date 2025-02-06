@@ -1,0 +1,33 @@
+              
+/* resets */
+/* prevents image from overflowing past it container */
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+
+#nature-book{
+    display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+   justify-content: center;
+   gap: 20px;
+   /* word-wrap: break-word; */
+   padding: 0 4%;
+    
+    
+    
+}
+
+.nature-card{
+    background:#fff;
+    padding: 15px;
+    border-radius: 25px ;
+}
+
+.img-fluid{
+    width: 100%;
+    height: 300px;
+    /* padding: 20px; */
+    object-fit: contain;
+}
