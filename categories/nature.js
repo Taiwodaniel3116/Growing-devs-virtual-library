@@ -98,7 +98,9 @@ let generateCategories =()=>{
 }
 generateCategories();
 }
-activate();
+activate(); // The activate function is so we can call the code inside in different js files using modules
+
+
 //  natureBooks.map((natureBook,index)=>{
 //     natureBook.innerHTML=`<h1>${natureBook.title}</h1>`
 // })
