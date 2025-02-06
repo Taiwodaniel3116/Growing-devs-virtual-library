@@ -1,4 +1,4 @@
- const natureBooks=[
+ const categoryBooks=[
   {
     "id": 1,
     "title": "The Hidden Life of Trees",
@@ -73,33 +73,33 @@
   //   "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
   // }
 ]
-  const natureContainer = document.querySelector("#nature-book")
+function activate() {
+  
+const categoryContainer = document.querySelector("#category-books");
 
+let generateCategories =()=>{
+  categoryContainer.innerHTML= categoryBooks
+     .map((categoryBook)=>{
+      // destructure items
+      const{title,author,id ,image,category,description}= categoryBook;
 
-  let generateNature =()=>{
-       natureContainer.innerHTML=natureBooks
-       .map((x)=>{
-        // destructure items
-        const{title,author,id ,image,category,description}=x
-
-        return `
-        <div class="nature-card">
-          <img class="img-fluid" src=${image} />
-            <figcaption>
-              <h1>${title}</h1>
-              <p class="author">Author:${author}</p>
-              <p>${category}</p>
-              <p>${description}</p>
-            </figcaption>
-      </div>
-        `
-       }).join(' ')
-  }
-
-
-
-  generateNature()
-  //  natureBooks.map((natureBook,index)=>{
-  //     natureBook.innerHTML=`<h1>${natureBook.title}</h1>`
-  // })
+      return `
+      <div class="category-pages-card">
+        <img class="img-fluid" src=${image} />
+          <figcaption>
+            <h1>${title}</h1>
+            <p class="author">Author:${author}</p>
+            <p>${category}</p>
+            <p>${description}</p>
+          </figcaption>
+    </div>
+      `
+     }).join(' ')
+}
+generateCategories();
+}
+activate();
+//  natureBooks.map((natureBook,index)=>{
+//     natureBook.innerHTML=`<h1>${natureBook.title}</h1>`
+// })
 
