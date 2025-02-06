@@ -46,8 +46,8 @@ nav ul li a {
   display: block;
   position: absolute;
   background-color:dimgrey;
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: auto;
 }
 header {
   display: flex;
