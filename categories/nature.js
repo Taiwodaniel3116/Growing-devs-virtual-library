@@ -1,4 +1,4 @@
- const categoryBooks=[
+   export let categoryBooks=[
   {
     "id": 1,
     "title": "The Hidden Life of Trees",
@@ -73,7 +73,7 @@
   //   "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
   // }
 ]
-function activate() {
+ export function activate() {
   
 const categoryContainer = document.querySelector("#category-books");
 
@@ -99,9 +99,4 @@ let generateCategories =()=>{
 generateCategories();
 }
 activate(); // The activate function is so we can call the code inside in different js files using modules
-
-
-//  natureBooks.map((natureBook,index)=>{
-//     natureBook.innerHTML=`<h1>${natureBook.title}</h1>`
-// })
 
