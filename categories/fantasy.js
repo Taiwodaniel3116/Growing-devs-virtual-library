@@ -1,7 +1,7 @@
 import { activate } from "./nature.js";
-import { categoryBooks } from "./nature.js";
+// import { categoryBooks } from "./nature.js";
 
- categoryBooks =[
+ const newBooks =[
     {
       "id": "F001",
       "title": "The Hobbit",
@@ -24,7 +24,7 @@ import { categoryBooks } from "./nature.js";
       "author": "George R.R. Martin",
       "description": "Noble families vie for control of the Iron Throne in the land of Westeros, where political intrigue and dark magic abound.",
       "category": "Epic Fantasy",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/81r+LNDO7pL.jpg"
+      "image": "https://m.media-amazon.com/images/I/91v+2sd0roL._AC_UY218_.jpg"
     },
     {
       "id": "F004",
@@ -40,7 +40,7 @@ import { categoryBooks } from "./nature.js";
       "author": "Brandon Sanderson",
       "description": "A group of rebels with magical abilities seeks to overthrow a tyrannical ruler in a world ruled by darkness.",
       "category": "Dark Fantasy",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/91M+dFqzmtL.jpg"
+      "image": "https://m.media-amazon.com/images/I/917NNRCArfL._AC_UY218_.jpg"
     },
     {
       "id": "F006",
@@ -48,7 +48,7 @@ import { categoryBooks } from "./nature.js";
       "author": "Scott Lynch",
       "description": "A master thief and con artist navigates a city of deception and intrigue while seeking revenge on a mysterious enemy.",
       "category": "Fantasy Heist",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/91nJ-DjuFoL.jpg"
+      "image": "https://m.media-amazon.com/images/I/91cRgSHxsbL._AC_UY218_.jpg"
     },
     {
       "id": "F007",
@@ -56,7 +56,7 @@ import { categoryBooks } from "./nature.js";
       "author": "Samantha Shannon",
       "description": "An epic tale of dragons, political struggles, and warrior queens set in a richly detailed fantasy world.",
       "category": "Epic Fantasy",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/91E6xUbA8PL.jpg"
+      "image": "https://m.media-amazon.com/images/I/91AKD1sx-4L._AC_UY218_.jpg"
     },
     {
       "id": "F008",
@@ -64,9 +64,9 @@ import { categoryBooks } from "./nature.js";
       "author": "Neil Gaiman",
       "description": "A man gets caught in a battle between old gods and new, as he journeys across a mystical and dangerous America.",
       "category": "Mythic Fantasy",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/91dsmUs46DL.jpg"
+      "image": "https://m.media-amazon.com/images/I/81FphHJqqWL._AC_UY218_.jpg"
     }
   ]
 
-  activate();
+  activate(newBooks);
   

@@ -1,7 +1,7 @@
  import { activate } from "./nature.js";
- import { categoryBooks } from "./nature.js";
+//  import { categoryBooks } from "./nature.js";
  
- categoryBooks =[
+ const newBooks =[
     {
       "id": "NF001",
       "title": "Sapiens: A Brief History of Humankind",
@@ -24,7 +24,7 @@
       "author": "Eckhart Tolle",
       "description": "A spiritual classic that emphasizes living in the present moment to find peace and enlightenment.",
       "category": "Spirituality & Mindfulness",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/71b8YhS4FjL.jpg"
+      "image": "https://m.media-amazon.com/images/I/31e721piVjL._AC_UY218_.jpg"
     },
     {
       "id": "NF004",
@@ -40,7 +40,7 @@
       "author": "Daniel Kahneman",
       "description": "Explores the two systems of thinking that drive decision-making: one fast and intuitive, the other slow and rational.",
       "category": "Psychology & Decision-Making",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/71II3x4qp4L.jpg"
+      "image": "https://m.media-amazon.com/images/I/61fdrEuPJwL._AC_UY218_.jpg"
     },
     {
       "id": "NF006",
@@ -48,7 +48,7 @@
       "author": "Robin Sharma",
       "description": "A guide to maximizing productivity, health, and happiness by waking up early and following a structured morning routine.",
       "category": "Personal Development",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/81N7FmJhbhL.jpg"
+      "image": "https://m.media-amazon.com/images/I/71loUTDulKL._AC_UY218_.jpg"
     },
     {
       "id": "NF007",
@@ -56,7 +56,7 @@
       "author": "Matthew Walker",
       "description": "Examines the science of sleep and its critical role in improving health, memory, and longevity.",
       "category": "Health & Science",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/81wouk4A-QL.jpg"
+      "image": "https://m.media-amazon.com/images/I/814sf-LvR0L._AC_UY218_.jpg"
     },
     {
       "id": "NF008",
@@ -64,9 +64,9 @@
       "author": "Malcolm Gladwell",
       "description": "Investigates the factors that contribute to high levels of success, from hidden advantages to cultural legacies.",
       "category": "Business & Success",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/71Y5P9B0rwL.jpg"
+      "image": "https://m.media-amazon.com/images/I/91lYcUJ8JsL._AC_UY218_.jpg"
     }
   ]
 
-  activate();
+  activate(newBooks);
   
