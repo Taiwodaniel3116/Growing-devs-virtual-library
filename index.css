@@ -16,7 +16,7 @@ button:hover {
   filter: drop-shadow(0 0.5em 0.5em black);
 }
 body {
-  background-color: burlywood;  
+  background-color: #fff;
 }
 nav ul{
   list-style-type: none;
@@ -230,52 +230,6 @@ header {
     text-align: center;
     font-size: 1rem;
   }
-  /* .book-categories {
-    display: grid;
-    row-gap: 1rem;
-  } */
-  .action-and-adventure,
-  .technology,
-  .health,
-  .nature,
-  .health,
-  .fiction,
-  .non-fiction,
-  .fantasy,
-  .science {
-    width: 90%;
-    height: 300px;
-    background-color: black;
-    color: white;
-    margin: auto;
-    border-radius: 30px;
-    text-align: center;
-    color: #fff;
-    padding-top: 2rem;
-    font-weight: bold;
-  }
-  .action-and-adventure {
-    background: url(img/todo-img.jpg);
-    object-position: center;
-    object-fit: cover;
-  }
-  .technology {
-    background: url(img/tech-img.jpeg);
-    background-position: center;
-  }
-  .nature {
-    background: url(img/IMG_4806.JPG);
-    background-position: center;
-  }
-  .fiction {
-    background: url(img/fiction-img.jpeg);
-    background-position: center;
-  }
-  .fantasy {
-    background: url(img/fantasy-img.jpeg);
-    background-position: center;
-  }
-  
 /*  */
    #book-categories {
     display: grid;
@@ -285,7 +239,6 @@ header {
   .book-item {
     width: 90%;
     height: 350px;
-    /* background: #fff; */
     color: #000;
     margin: auto;
     border-radius: 30px;
@@ -364,13 +317,11 @@ header {
     padding-top: 1rem;
   }
   .copyright {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   /* CATEGORIES PAGE STYLING */
-  /* resets */
-/* prevents image from overflowing past it container */
 img{
   display: block;
   max-inline-size: 100%;
@@ -392,7 +343,6 @@ img{
 .img-fluid{
   width: 100%;
   height: 300px;
-  /* padding: 20px; */
   object-fit: contain;
 }
 .category-pages-card h1,
@@ -429,6 +379,10 @@ img{
   .img-div {
     background-color: blue;
   }
+  /* Footer */
+  .copyright {
+    font-size: 1.2rem;
+  }
 }
 /* Mobile Large */
 @media (min-width: 425px) {
@@ -458,6 +412,10 @@ img{
    .img-div {
      background-color: green;
    }
+   /* Footer */
+  .copyright {
+    font-size: 1.2rem;
+  }
 }
 /* Tablet */
 @media (min-width: 768px) {
@@ -537,7 +495,7 @@ img{
   .img-div {
     width: 80px;
     height: 80px;
-    background-color: yellow;
+    /* background-color: yellow; */
     left: -5px;
   }
   .reviewer-img {
@@ -622,22 +580,6 @@ img{
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
   }
-  /* .action-and-adventure,
-  .technology,
-  .health,
-  .nature,
-  .health,
-  .fiction,
-  .non-fiction,
-  .fantasy,
-  .science {
-    height: 500px;
-    font-size: 1.5rem;
-  } */
-  /* .view-collection {
-    border-radius: 20px;
-    font-size: 1.2rem;
-  } */
   .book-item h3 {
     font-size: 1.5rem;
   }
@@ -645,6 +587,10 @@ img{
     font-size: 1.1em;
      border-radius: 25px
   }
+    /* Footer */
+    .copyright {
+      font-size: 1.4rem;
+    }
 
 /* NATURE PAGE*/
 #category-books{
