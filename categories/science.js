@@ -1,81 +1,73 @@
 import { activate } from "./nature.js";
-import { categoryBooks } from "./nature.js";
+// import { categoryBooks } from "./nature.js";
 
-  categoryBooks=[
+const newBooks = [
   {
-    "id": 1,
-    "title": "The Hidden Life of Trees",
-    "author": "Peter Wohlleben",
-    "image": "img/nature-img/5.png",
-    "category": "Nature",
-    "description": "A fascinating exploration of how trees communicate, care for each other, and form complex ecosystems."
+    "id": "S001",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "Explores fundamental questions about the universe, black holes, and time itself in an accessible way.",
+    "category": "Physics & Cosmology",
+    "image": "https://m.media-amazon.com/images/I/A1WTURKqwyL._AC_UY218_.jpg"
   },
   {
-    "id": 2,
-    "title": "Braiding Sweetgrass",
-    "author": "Robin Wall Kimmerer",
-    "image": "img/nature-img/6.png",
-    "category": "Nature",
-    "description": "A beautiful blend of indigenous wisdom and scientific knowledge, celebrating the relationship between humans and the natural world."
+    "id": "S002",
+    "title": "Astrophysics for People in a Hurry",
+    "author": "Neil deGrasse Tyson",
+    "description": "A short and engaging introduction to astrophysics, perfect for those curious about the universe but short on time.",
+    "category": "Astrophysics",
+    "image": "https://m.media-amazon.com/images/I/71c46ivy5xL._AC_UY218_.jpg"
   },
   {
-    "id": 3,
-    "title": "The Overstory",
-    "author": "Richard Powers",
-    "image": "img/nature-img/8.png",
-    "category": "Nature",
-    "description": "A Pulitzer Prize-winning novel that weaves together the lives of characters and their deep connections to trees and forests."
+    "id": "S003",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "Introduces the gene-centered view of evolution and explains how natural selection shapes life.",
+    "category": "Evolutionary Biology",
+    "image": "https://m.media-amazon.com/images/I/81qBibbrPGL._AC_UY218_.jpg"
   },
   {
-    "id": 4,
-    "title": "Silent Spring",
-    "author": "Rachel Carson",
-    "image": "img/nature-img/9.png",
-    "category": "Nature",
-    "description": "A groundbreaking work that exposed the dangers of pesticides and sparked the modern environmental movement."
+    "id": "S004",
+    "title": "The Gene: An Intimate History",
+    "author": "Siddhartha Mukherjee",
+    "description": "A fascinating exploration of genetics, its history, and its impact on humanity.",
+    "category": "Genetics & Medicine",
+    "image": "https://m.media-amazon.com/images/I/71ZGYmVZKXL._AC_UY218_.jpg"
   },
   {
-    "id": 5,
-    "title": "The Nature Fix",
-    "author": "Florence Williams",
-    "image": "img/nature-img/1.png",
-    "category": "Nature",
-    "description": "An exploration of how spending time in nature can improve our mental and physical well-being."
+    "id": "S005",
+    "title": "The Elegant Universe",
+    "author": "Brian Greene",
+    "description": "Explains string theory and its potential to unify all forces of nature.",
+    "category": "Theoretical Physics",
+    "image": "https://m.media-amazon.com/images/I/41K0DR5Y0VL._AC_UY218_.jpg"
   },
   {
-    "id": 6,
-    "title": "Walden",
-    "author": "Henry David Thoreau",
-    "image": "img/nature-img/2.png",
-    "category": "Nature",
-    "description": "A classic reflection on simple living in natural surroundings, written during Thoreau's time at Walden Pond."
+    "id": "S006",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "description": "A deep look into the history and evolution of Homo sapiens and how culture has shaped our species.",
+    "category": "Anthropology & History",
+    "image": "https://m.media-amazon.com/images/I/713jIoMO3UL._SL1500_.jpg"
   },
   {
-    "id": 7,
-    "title": "The Invention of Nature",
-    "author": "Andrea Wulf",
-    "image": "img/nature-img/3.png",
-    "category": "Nature",
-    "description": "A biography of Alexander von Humboldt, the visionary naturalist who reshaped our understanding of the natural world."
+    "id": "S007",
+    "title": "The Sixth Extinction",
+    "author": "Elizabeth Kolbert",
+    "description": "Explores how human activity is driving mass extinctions and altering Earth's biodiversity.",
+    "category": "Environmental Science",
+    "image": "https://m.media-amazon.com/images/I/81h90TRHDnL._AC_UY218_.jpg"
   },
   {
-    "id": 8,
-    "title": "The Soul of an Octopus",
-    "author": "Sy Montgomery",
-    "image": "img/nature-img/7.png",
-    "category": "Nature",
-    "description": "A captivating journey into the intelligence and emotional lives of octopuses, revealing their surprising complexity."
+    "id": "S008",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "A journey through space and time, exploring the universe and humanity’s place in it.",
+    "category": "Space & Astronomy",
+    "image": "https://m.media-amazon.com/images/I/710C5x4MzwL._AC_UY218_.jpg"
   }
-  //Commented this out so we could have an even number of books on the screen 
-  // {
-  //   "id": 9,
-  //   "title": "H is for Hawk",
-  //   "author": "Helen Macdonald",
-  //   "image": "img/nature-img/4.png",
-  //   "category": "Nature",
-  //   "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
-  // }
 ]
 
+
 // Calling the function imported
-activate();
+activate(newBooks);

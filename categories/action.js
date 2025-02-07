@@ -1,81 +1,72 @@
 import { activate } from "./nature.js";
-import { categoryBooks } from "./nature.js";
+// import { categoryBooks } from "./nature.js";
 
- categoryBooks=[
+const newBooks = [
   {
-    "id": 1,
-    "title": "The Hidden Life of Trees",
-    "author": "Peter Wohlleben",
-    "image": "img/nature-img/5.png",
-    "category": "Action and Adventure",
-    "description": "A fascinating exploration of how trees communicate, care for each other, and form complex ecosystems."
+    "id": "A001",
+    "title": "The Bourne Identity",
+    "author": "Robert Ludlum",
+    "description": "A man suffering from amnesia discovers he is a highly skilled assassin and must uncover his past while being hunted.",
+    "category": "Spy Thriller",
+    "image": "https://m.media-amazon.com/images/I/81yEz5Ol76L._AC_UY218_.jpg"
   },
   {
-    "id": 2,
-    "title": "Braiding Sweetgrass",
-    "author": "Robin Wall Kimmerer",
-    "image": "img/nature-img/6.png",
-    "category": "Action and Adventure",
-    "description": "A beautiful blend of indigenous wisdom and scientific knowledge, celebrating the relationship between humans and the natural world."
+    "id": "A002",
+    "title": "Jack Reacher: Killing Floor",
+    "author": "Lee Child",
+    "description": "Ex-military policeman Jack Reacher gets caught in a web of conspiracy and murder in a small town.",
+    "category": "Action Thriller",
+    "image": "https://m.media-amazon.com/images/I/71DKedjPmYL._AC_UY218_.jpg"
   },
   {
-    "id": 3,
-    "title": "The Overstory",
-    "author": "Richard Powers",
-    "image": "img/nature-img/8.png",
-    "category": "Action and Adventure",
-    "description": "A Pulitzer Prize-winning novel that weaves together the lives of characters and their deep connections to trees and forests."
+    "id": "A003",
+    "title": "The Hunt for Red October",
+    "author": "Tom Clancy",
+    "description": "A high-stakes Cold War thriller about a rogue Soviet submarine captain and a U.S. intelligence officer trying to stop global war.",
+    "category": "Military Thriller",
+    "image": "https://m.media-amazon.com/images/I/61WkzOOhUdL._AC_UY218_.jpg"
   },
   {
-    "id": 4,
-    "title": "Silent Spring",
-    "author": "Rachel Carson",
-    "image": "img/nature-img/9.png",
-    "category": "Action and Adventure",
-    "description": "A groundbreaking work that exposed the dangers of pesticides and sparked the modern environmental movement."
+    "id": "A004",
+    "title": "The Gray Man",
+    "author": "Mark Greaney",
+    "description": "A former CIA operative turned assassin is on the run, pursued by international enemies.",
+    "category": "Espionage Thriller",
+    "image": "https://m.media-amazon.com/images/I/81FuPz0VlHL._AC_UY218_.jpg"
   },
   {
-    "id": 5,
-    "title": "The Nature Fix",
-    "author": "Florence Williams",
-    "image": "img/nature-img/1.png",
-    "category": "Action and Adventure",
-    "description": "An exploration of how spending time in nature can improve our mental and physical well-being."
+    "id": "A005",
+    "title": "Without Remorse",
+    "author": "Tom Clancy",
+    "description": "A gripping story of revenge and covert operations as a former Navy SEAL takes on drug cartels and corrupt officials.",
+    "category": "Military & Action",
+    "image": "https://m.media-amazon.com/images/I/91v13TNdKXL._AC_UY218_.jpg"
   },
   {
-    "id": 6,
-    "title": "Walden",
-    "author": "Henry David Thoreau",
-    "image": "img/nature-img/2.png",
-    "category": "Action and Adventure",
-    "description": "A classic reflection on simple living in natural surroundings, written during Thoreau's time at Walden Pond."
+    "id": "A006",
+    "title": "I Am Pilgrim",
+    "author": "Terry Hayes",
+    "description": "An intelligence agent is forced out of retirement to track down a terrorist threatening global destruction.",
+    "category": "Spy & Suspense",
+    "image": "https://m.media-amazon.com/images/I/516V95EW6nL._SY445_SX342_.jpg"
   },
   {
-    "id": 7,
-    "title": "The Invention of Nature",
-    "author": "Andrea Wulf",
-    "image": "img/nature-img/3.png",
-    "category": "Action and Adventure",
-    "description": "A biography of Alexander von Humboldt, the visionary naturalist who reshaped our understanding of the natural world."
+    "id": "A007",
+    "title": "The Terminal List",
+    "author": "Jack Carr",
+    "description": "A Navy SEAL seeks revenge on those who betrayed him in this adrenaline-fueled military thriller.",
+    "category": "Action & Revenge Thriller",
+    "image": "https://m.media-amazon.com/images/I/81ntNRm-VuL._AC_UY218_.jpg"
   },
   {
-    "id": 8,
-    "title": "The Soul of an Octopus",
-    "author": "Sy Montgomery",
-    "image": "img/nature-img/7.png",
-    "category": "Action and Adventure",
-    "description": "A captivating journey into the intelligence and emotional lives of octopuses, revealing their surprising complexity."
+    "id": "A008",
+    "title": "One Rough Man",
+    "author": "Brad Taylor",
+    "description": "An elite operative must prevent a catastrophic terrorist attack while battling his own past demons.",
+    "category": "Action Thriller",
+    "image": "https://m.media-amazon.com/images/I/91Kqw0o+8SL._AC_UY218_.jpg"
   }
-  //Commented this out so we could have an even number of books on the screen 
-  // {
-  //   "id": 9,
-  //   "title": "H is for Hawk",
-  //   "author": "Helen Macdonald",
-  //   "image": "img/nature-img/4.png",
-  //   "category": "Nature",
-  //   "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
-  // }
 ]
 
 
-activate();
+activate(newBooks);

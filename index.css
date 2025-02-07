@@ -46,8 +46,8 @@ nav ul li a {
   display: block;
   position: absolute;
   background-color:dimgrey;
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: auto;
 }
 header {
   display: flex;
@@ -345,6 +345,23 @@ img{
   height: 300px;
   object-fit: contain;
 }
+/* changes to title size color and font family */
+.category-pages-card .category-title{
+  font-size: 1.5rem;
+  color: #18021b;
+  text-shadow: 2px 2px 3px rgb(242, 110, 247);
+}
+
+.category-pages-card .author{
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+.category-pages-card .description{
+  font-size: .9rem;
+  font-weight: bolder;
+  font-family: cursive;
+}
+/* styling ends here */
 .category-pages-card h1,
 .category-pages-card p {
   text-align: center;
