@@ -71,20 +71,12 @@ export let categoryBooks = [
     description:
       "A captivating journey into the intelligence and emotional lives of octopuses, revealing their surprising complexity.",
   },
-  //Commented this out so we could have an even number of books on the screen
-  // {
-  //   "id": 9,
-  //   "title": "H is for Hawk",
-  //   "author": "Helen Macdonald",
-  //   "image": "img/nature-img/4.webp",
-  //   "category": "Nature",
-  //   "description": "A memoir of grief, healing, and falconry, as the author trains a goshawk and reflects on her connection to the wild."
-  // }
 ];
+
 export function activate(categoryBooks) {
   const categoryContainer = document.querySelector("#category-books");
 
-  let generateCategories = () => {
+    const generateCategories = () => {
     categoryContainer.innerHTML = categoryBooks
       .map((categoryBook) => {
         // destructure items
@@ -107,4 +99,5 @@ export function activate(categoryBooks) {
   };
   generateCategories();
 }
+
 activate(categoryBooks); // The activate function is so we can call the code inside in different js files using modules

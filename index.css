@@ -193,7 +193,7 @@ header {
   .sec-1 span {
     color: #a7dad3;
   }
-  .sec-1 input {
+   input {
     border-radius: 15px;
     border: none;
     width: 165px;
@@ -336,6 +336,7 @@ img{
 }
 .category-pages-card{
   background:#fff;
+  margin-top: 1rem;
   padding: 15px;
   border-radius: 25px ;
 }
@@ -377,7 +378,7 @@ img{
     font-weight: bold;
     font-size: 1.5rem;
   }
-  .sec-1 input {
+  input {
     width: 190px;
   }
   .sec-1 img {
@@ -410,7 +411,7 @@ img{
     font-weight: bold;
     font-size: 1.7rem;
   }
-  .sec-1 input {
+  input {
     width: 220px;
   }
   .sec-1 img {
@@ -438,6 +439,13 @@ img{
 @media (min-width: 768px) {
   body {
     background-color: yellow;
+   }
+   header{
+    display: flex;
+    justify-content: space-around;
+   }
+   .BrandName {
+    padding-right: 10rem;
    }
    .dropdown a {
     font-size: 0.8rem;
@@ -468,7 +476,7 @@ img{
     font-weight: bold;
     font-size: 2.5rem;
   }
-  .sec-1 input {
+  input {
     width: 320px;
     height: 45px;
   }
@@ -525,6 +533,9 @@ img{
   body {
     background-color: red;
    }
+   .BrandName {
+    padding-right: 23rem;
+   }
    .dropdown a {
     font-size: 1rem;
    }
@@ -538,7 +549,7 @@ img{
     .sec-1 h1 {
       font-size: 3.5rem;
     }
-    .sec-1 input {
+    input {
       width: 445px;
       font-size: 0.9rem;
     }
@@ -563,6 +574,20 @@ img{
   body {
     background-color: lime;
    }
+   .BrandName {
+    padding-right: 55rem;
+    font-size: 2rem;
+    line-height: 1.8rem;
+   }
+   nav ul li a{
+    font-size: 1.3rem;
+   }
+   .dropdown button  {
+    font-size: 1.3rem;
+   }
+   .dropdown a  {
+    font-size: 1.3rem;
+   }
    .sec-1 {
     padding-top: 6rem;
     padding-inline-start: 9rem;
@@ -571,7 +596,7 @@ img{
    .sec-1 h1 {
     font-size: 5rem;
   }
-  .sec-1 input {
+  input {
     width: 570px;
     height: 70px;
     border-radius: 30px;

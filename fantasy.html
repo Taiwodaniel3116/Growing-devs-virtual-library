@@ -8,10 +8,62 @@
 </head>
 <body>
   <header>
-    
+    <!-- <div class="header"> -->
+      <div class="header-left">
+  
+        <!-- <div class="logo">
+          <img src="img/virtual-library-book-logo.png" alt="logo">
+        </div> -->
+  
+        <div class="BrandName">The <br><span>Growing</span> <br>Devs</div>
+        <!-- /////////////////////////// -->
+        
+        <nav>
+          <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="#">Books</a></li>
+           
+          <!-- //////////////////////// -->
+          <div class="dropdown">
+            <button class="js-content2">Categories
+                  <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content js-dropdown2">
+              <a href="action.html">Action</a>
+              <a href="fiction.html">Fiction</a>
+              <!-- <a href="non-fiction.html">Non-Fiction</a> -->
+              <a href="nature.html">Nature</a>
+              <a href="health.html">Health</a>
+              <a href="science.html">Science</a>
+              <a href="technology.html">Technology</a>
+            </div>
+          </div>
+
+          <!-- /////// /////////////////-->
+          <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+  
+      </div>
+    <!-- ///////////////////////////// -->
+    <div class="hamburger-icon">
+      <span class="span-1"></span>
+      <span class="span-2"></span>
+      <span class="span-3"></span>
+    </div>
+    <!-- ///////////////////////////// -->
+    <div class="header-btn">
+      <button>
+        <i class="fa-solid fa-user"></i>
+        Login / Register
+      </button>
+    </div>
+    <!-- //////////////////////////// -->
+  <!-- </div> -->
   </header>
   <main class="all-categories">
     <h1>📚Fantasy</h1>
+    <input id="searching" type="text" placeholder="not yet functioning...">
   <div id="category-books">
     <!-- Books will be added dynamically here -->
   </div>
@@ -26,5 +78,7 @@
  </footer>
 
   <script type="module" src="categories/fantasy.js"></script>
+  <script src="index.js"></script>
+
 </body>
 </html>
