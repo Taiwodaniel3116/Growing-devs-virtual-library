@@ -82,7 +82,6 @@ export function activate(categoryBooks) {
         // destructure items
         const { title, author, id, image, category, description } =
           categoryBook;
-
         return `
       <div class="category-pages-card">
         <img class="img-fluid" src=${image} />
