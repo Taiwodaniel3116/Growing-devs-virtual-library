@@ -81,7 +81,7 @@ nav ul li a {
   cursor: pointer;
   font-size: 1rem;
 } 
-}
+
 .dropdown a {
   display: block;
   text-decoration: none;
@@ -469,9 +469,6 @@ img{
 }
 /* Mobile medium */
 @media (min-width: 375px) {
-  body {
-    /* background-color: blue; */
-  }
   .sec-1 h1 {
     font-weight: bold;
     font-size: 1.5rem;
@@ -492,9 +489,6 @@ img{
     padding-inline-start: 0.5rem;
     padding-inline-end: 0.5rem;
   }
-  .img-div {
-    /* background-color: blue; */
-  }
   /* Footer */
   .copyright {
     font-size: 1.2rem;
@@ -505,9 +499,6 @@ img{
   body {
     background-color: green;
   }
-  .sec-1 h1 {
-    /* background-color: green; */
-   }
    .sec-1 h1 {
     font-weight: bold;
     font-size: 1.7rem;
@@ -531,11 +522,6 @@ img{
   .img-div {
     background-color: green;
   }
-  /* Footer */
-   }
-   .img-div {
-     /* background-color: green; */
-   }
    /* Footer */
   .copyright {
     font-size: 1.2rem;
@@ -546,9 +532,6 @@ img{
   body {
     background-color: yellow;
   }
-  header {
-    /* background-color: yellow; */
-   }
    header{
     display: flex;
     justify-content: space-around;
@@ -643,9 +626,6 @@ img{
   body {
     background-color: red;
   }
-  .BrandName {
-    /* background-color: red; */
-   }
    .BrandName {
     padding-right: 23rem;
   }
@@ -687,9 +667,6 @@ img{
   body {
     background-color: lime;
   }
-  .BrandName {
-    /* background-color: lime; */
-   }
    .BrandName {
     padding-right: 55rem;
     font-size: 2rem;
