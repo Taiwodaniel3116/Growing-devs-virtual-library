@@ -26,17 +26,19 @@ nav ul{
 }
 nav ul li a {
   text-decoration: none;
+  color: black;
 }
 .dropdown button {
   background: transparent;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
 } 
 .dropdown a {
   display: block;
   text-decoration: none;
   padding-left: 10px;
-  color: black;
+  /* color: black; */
 }
 .dropdown .dropdown-content {
   /* border: 2px solid black; */
@@ -80,7 +82,7 @@ header {
 /* Mobile small */
 @media (min-width: 320px) {
   body {
-    background-color: darkorange;
+    /* background-color: darkorange; */
     border: 2px solid black;
   }
   .BrandName {
@@ -88,9 +90,9 @@ header {
     line-height: 1.5rem;
     text-align: center;
   }
-  /* .BrandName span {
+  .BrandName span {
     color:mediumspringgreen;
-  } */
+  }
   .header-btn {
     display: none;
   }
@@ -102,7 +104,7 @@ header {
     width: 300px;
     height: 100%;
     display: none;
-    background-color: darkorange;
+    background-color: springgreen;
     border-bottom: 2px solid white;
   }
   nav ul {
@@ -146,7 +148,7 @@ header {
   .hamburger-icon .span-1 {
     width: 30px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(192, 188, 188);
     position: absolute;
     top: 18px;
   }
@@ -160,7 +162,7 @@ header {
   .hamburger-icon .span-3 {
     width: 25px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(192, 188, 188);
     position: absolute;
     top: 33px;
   }
@@ -191,7 +193,7 @@ header {
     white-space: nowrap;
   }
   .sec-1 span {
-    color: #a7dad3;
+    color:mediumspringgreen;
   }
    input {
     border-radius: 15px;
@@ -200,7 +202,7 @@ header {
     height: 35px;
     padding-left: 10px;
     font-size: 0.7rem;
-    background-color:bisque;
+    background-color: rgb(241, 236, 236);
     outline: none;
   }
   .sec-1 img {
@@ -222,7 +224,7 @@ header {
     height: max-content;
     padding: 3px 10px;
     border-radius: 15px;
-    background-color: cornsilk;
+    background-color: rgb(235, 231, 231);
     margin: auto;
   }
   .sec-2 h2,
@@ -275,7 +277,7 @@ header {
   .review-container {
     width: 70%;
     height: 250px;
-    background-color: #fff;
+    background-color: rgb(214, 210, 210);
     margin: auto;
     border-radius: 20px;
     position: relative;
@@ -299,7 +301,7 @@ header {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: darkorange;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,7 +337,7 @@ img{
  padding: 0 4%;
 }
 .category-pages-card{
-  background:#fff;
+  background:#000;
   margin-top: 1rem;
   padding: 15px;
   border-radius: 25px ;
@@ -349,13 +351,16 @@ img{
 /* changes to title size color and font family */
 .category-pages-card .category-title{
   font-size: 1.5rem;
-  color: #18021b;
-  text-shadow: 2px 2px 3px rgb(242, 110, 247);
+  /* color: #18021b; */
+  color: #fff;
+  /* text-shadow: 2px 2px 3px rgb(242, 110, 247); */
+  text-shadow: 2px 2px 7px #fff;
 }
 
 .category-pages-card .author{
   font-family: cursive;
   font-size: 1.2rem;
+  color: #fff;
 }
 .category-pages-card .description{
   font-size: .9rem;
@@ -366,13 +371,14 @@ img{
 .category-pages-card h1,
 .category-pages-card p {
   text-align: center;
+  color: #fff;
 }
 /*  */
 }
 /* Mobile medium */
 @media (min-width: 375px) {
   body {
-    background-color: blue;
+    /* background-color: blue; */
   }
   .sec-1 h1 {
     font-weight: bold;
@@ -395,7 +401,7 @@ img{
    padding-inline-end: 0.5rem;
   }
   .img-div {
-    background-color: blue;
+    /* background-color: blue; */
   }
   /* Footer */
   .copyright {
@@ -405,7 +411,7 @@ img{
 /* Mobile Large */
 @media (min-width: 425px) {
   body {
-    background-color: green;
+    /* background-color: green; */
    }
    .sec-1 h1 {
     font-weight: bold;
@@ -428,7 +434,7 @@ img{
     padding-inline-end: 0.9rem;
    }
    .img-div {
-     background-color: green;
+     /* background-color: green; */
    }
    /* Footer */
   .copyright {
@@ -438,7 +444,7 @@ img{
 /* Tablet */
 @media (min-width: 768px) {
   body {
-    background-color: yellow;
+    /* background-color: yellow; */
    }
    header{
     display: flex;
@@ -483,6 +489,7 @@ img{
   .sec-1 img {
     width: 250px;
     height: 250px;
+    box-shadow: 3px 3px 1px #000;
   }
   .sec-2 .categories,
   .sec-3 .testimonials{
@@ -531,7 +538,7 @@ img{
 /* Laptop */
 @media (min-width: 1024px) {
   body {
-    background-color: red;
+    /* background-color: red; */
    }
    .BrandName {
     padding-right: 23rem;
@@ -572,7 +579,7 @@ img{
 /* Laptop Large */
 @media (min-width: 1440px) {
   body {
-    background-color: lime;
+    /* background-color: lime; */
    }
    .BrandName {
     padding-right: 55rem;
