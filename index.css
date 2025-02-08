@@ -1,12 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  margin: 0
-  padding 0;
+  margin: 0 padding 0;
   box-sizing: border-box;
   font-family: poppins;
   /* font-weight: bold; */
 }
+
+/* animation for testimonial */
+:root {
+  --clr-1: #1e17c7;
+  --clr-2: #9400aa;
+  --clr-3: #c60088;
+  --clr-4: #f03636;
+  --clr-5: #c9b900;
+  --clr-6: #df9400;
+  --clr-7: #a7dc0e;
+  --clr-8: #6dfb5f;
+  --clr-9: #ef5321;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+.review-container::before,
+.review-container::after {
+  content: "";
+  position: absolute;
+  inset: -0.1rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-2),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-3),
+    var(--clr-1),
+    var(--clr-6),
+    var(--clr-7),
+    var(--clr-8),
+    var(--clr-9)
+  );
+  border-radius: inherit;
+  animation: rotate 20s linear infinite;
+  /* transition: all 3s ease-in; */
+}
+
+.review-container::after {
+  filter: blur(.5rem);
+}
+/* animation for testimonial */
 button {
   cursor: pointer;
 }
@@ -18,7 +65,7 @@ button:hover {
 body {
   background-color: #fff;
 }
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -34,6 +81,7 @@ nav ul li a {
   cursor: pointer;
   font-size: 1rem;
 } 
+}
 .dropdown a {
   display: block;
   text-decoration: none;
@@ -44,10 +92,10 @@ nav ul li a {
   /* border: 2px solid black; */
   display: none;
 }
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
   display: block;
   position: absolute;
-  background-color:dimgrey;
+  background-color: dimgrey;
   width: 200px;
   height: auto;
 }
@@ -65,7 +113,7 @@ header {
 }
 .header-btn button {
   border: none;
-  border-radius:        20px  30px;
+  border-radius: 20px 30px;
   background-color: blue;
   padding: 15px;
   color: white;
@@ -75,7 +123,6 @@ header {
 }
 
 /* //////////////////////MEDIA QUERIES//////////// */
-
 
 /* BREAKPOINTs */
 
@@ -97,7 +144,7 @@ header {
     display: none;
   }
   .header-left {
-  align-items: baseline;
+    align-items: baseline;
   }
   nav {
     position: absolute;
@@ -118,7 +165,7 @@ header {
     background: transparent;
     margin-bottom: 2rem;
     cursor: pointer;
-  } 
+  }
   .dropdown a {
     display: block;
     text-decoration: none;
@@ -128,7 +175,7 @@ header {
     border: 2px solid black;
     display: none;
   }
-  .dropdown:hover .dropdown-content{
+  .dropdown:hover .dropdown-content {
     display: block;
   }
   /* ////////HAMBURGER ICON/////////// */
@@ -170,7 +217,7 @@ header {
     transform: rotate(45deg);
   }
   .first-span2 {
-    transform: rotate(  0deg);
+    transform: rotate(0deg);
   }
   .sec-span {
     transform: rotate(-45deg);
@@ -195,13 +242,14 @@ header {
   .sec-1 span {
     color:mediumspringgreen;
   }
-   input {
+  input {
     border-radius: 15px;
     border: none;
     width: 165px;
     height: 35px;
     padding-left: 10px;
     font-size: 0.7rem;
+    background-color: bisque;
     background-color: rgb(241, 236, 236);
     outline: none;
   }
@@ -218,7 +266,7 @@ header {
     border: 1px solid #000;
   }
   .sec-2 .categories,
-  .sec-3 .testimonials{
+  .sec-3 .testimonials {
     text-align: center;
     width: max-content;
     height: max-content;
@@ -232,8 +280,8 @@ header {
     text-align: center;
     font-size: 1rem;
   }
-/*  */
-   #book-categories {
+  /*  */
+  #book-categories {
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     gap: 1rem;
@@ -254,7 +302,7 @@ header {
     margin-top: 0;
     color: #000;
   }
-  .view-collection-button{
+  .view-collection-button {
     background-color: #000;
     color: #fff;
     border-radius: 20px;
@@ -269,7 +317,7 @@ header {
     padding-right: 5px;
     margin-left: auto;
     margin-right: auto;
-  } 
+  }
   .book-item p {
     color: #000;
   }
@@ -342,7 +390,36 @@ img{
   padding: 15px;
   border-radius: 25px ;
 }
+  img {
+    display: block;
+    max-inline-size: 100%;
+  }
+  #category-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    /* word-wrap: break-word; */
+    padding: 0 4%;
+  }
+  .category-pages-card {
+    background: #fff;
+    margin-top: 1rem;
+    padding: 15px;
+    border-radius: 25px;
+  }
 
+  .img-fluid {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+  /* changes to title size color and font family */
+  .category-pages-card .category-title {
+    font-size: 1.5rem;
+    color: #18021b;
+    text-shadow: 2px 2px 3px rgb(242, 110, 247);
+  }
 .img-fluid{
   width: 100%;
   height: 300px;
@@ -357,6 +434,21 @@ img{
   text-shadow: 2px 2px 7px #fff;
 }
 
+  .category-pages-card .author {
+    font-family: cursive;
+    font-size: 1.2rem;
+  }
+  .category-pages-card .description {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    font-family: cursive;
+  }
+  /* styling ends here */
+  .category-pages-card h1,
+  .category-pages-card p {
+    text-align: center;
+  }
+  /*  */
 .category-pages-card .author{
   font-family: cursive;
   font-size: 1.2rem;
@@ -397,8 +489,8 @@ img{
     height: 380px;
   }
   .review-content {
-   padding-inline-start: 0.5rem;
-   padding-inline-end: 0.5rem;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
   }
   .img-div {
     /* background-color: blue; */
@@ -411,6 +503,9 @@ img{
 /* Mobile Large */
 @media (min-width: 425px) {
   body {
+    background-color: green;
+  }
+  .sec-1 h1 {
     /* background-color: green; */
    }
    .sec-1 h1 {
@@ -432,6 +527,11 @@ img{
   .review-content {
     padding-inline-start: 0.9rem;
     padding-inline-end: 0.9rem;
+  }
+  .img-div {
+    background-color: green;
+  }
+  /* Footer */
    }
    .img-div {
      /* background-color: green; */
@@ -444,41 +544,44 @@ img{
 /* Tablet */
 @media (min-width: 768px) {
   body {
+    background-color: yellow;
+  }
+  header {
     /* background-color: yellow; */
    }
    header{
     display: flex;
     justify-content: space-around;
-   }
-   .BrandName {
+  }
+  .BrandName {
     padding-right: 10rem;
-   }
-   .dropdown a {
+  }
+  .dropdown a {
     font-size: 0.8rem;
-   }
-   .dropdown button {
+  }
+  .dropdown button {
     font-size: 0.8rem;
     font-weight: bold;
-   }
-    nav {
-      display: contents;
-    }
-    nav ul {
-      display: flex;
-    }
-    nav ul li a {
-      font-size: 0.8rem;
-      font-weight: bold;
-    }
-    .hamburger-icon {
-      display: none;
-    }
-   .sec-1 {
+  }
+  nav {
+    display: contents;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .sec-1 {
     padding-left: 4rem;
     padding-right: 4rem;
     justify-content: space-between;
-   }
-   .sec-1 h1 {
+  }
+  .sec-1 h1 {
     font-weight: bold;
     font-size: 2.5rem;
   }
@@ -492,7 +595,7 @@ img{
     box-shadow: 3px 3px 1px #000;
   }
   .sec-2 .categories,
-  .sec-3 .testimonials{
+  .sec-3 .testimonials {
     padding: 4px 12px;
     border-radius: 17px;
     font-size: 1.3rem;
@@ -518,9 +621,9 @@ img{
     padding-inline-start: 4rem;
     padding-inline-end: 4rem;
   }
-   .reviewer {
+  .reviewer {
     font-size: 1rem;
-  } 
+  }
   .reviewer-job {
     font-size: 1rem;
   }
@@ -538,40 +641,43 @@ img{
 /* Laptop */
 @media (min-width: 1024px) {
   body {
+    background-color: red;
+  }
+  .BrandName {
     /* background-color: red; */
    }
    .BrandName {
     padding-right: 23rem;
-   }
-   .dropdown a {
+  }
+  .dropdown a {
     font-size: 1rem;
-   }
-   .dropdown button {
+  }
+  .dropdown button {
     font-size: 1rem;
     font-weight: bold;
-   }
-    nav ul li a {
-      font-size: 1rem;
-    }
-    .sec-1 h1 {
-      font-size: 3.5rem;
-    }
-    input {
-      width: 445px;
-      font-size: 0.9rem;
-    }
-    .sec-1 img {
-      width: 350px;
-      height: 350px;
-    }
-    /* Categories */
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  .sec-1 h1 {
+    font-size: 3.5rem;
+  }
+  input {
+    width: 445px;
+    font-size: 0.9rem;
+  }
+  .sec-1 img {
+    width: 350px;
+    height: 350px;
+  }
+  /* Categories */
   .book-item {
     height: 450px;
   }
   .book-item h3 {
     font-size: 1.5rem;
   }
-  .view-collection-button{
+  .view-collection-button {
     padding: 10px 20px;
     font-size: 0.9em;
   }
@@ -579,28 +685,31 @@ img{
 /* Laptop Large */
 @media (min-width: 1440px) {
   body {
+    background-color: lime;
+  }
+  .BrandName {
     /* background-color: lime; */
    }
    .BrandName {
     padding-right: 55rem;
     font-size: 2rem;
     line-height: 1.8rem;
-   }
-   nav ul li a{
+  }
+  nav ul li a {
     font-size: 1.3rem;
-   }
-   .dropdown button  {
+  }
+  .dropdown button {
     font-size: 1.3rem;
-   }
-   .dropdown a  {
+  }
+  .dropdown a {
     font-size: 1.3rem;
-   }
-   .sec-1 {
+  }
+  .sec-1 {
     padding-top: 6rem;
     padding-inline-start: 9rem;
     padding-inline-end: 9rem;
-   }
-   .sec-1 h1 {
+  }
+  .sec-1 h1 {
     font-size: 5rem;
   }
   input {
@@ -613,9 +722,9 @@ img{
     width: 700px;
     height: 700px;
   }
-/*  */
+  /*  */
   .sec-2 .categories,
-  .sec-3 .testimonials{
+  .sec-3 .testimonials {
     padding: 7px 15px;
     border-radius: 25px;
     font-size: 1.9rem;
@@ -624,33 +733,38 @@ img{
   .sec-3 h2 {
     font-size: 3.5rem;
   }
-   /* // */
-   #book-categories {
+  /* // */
+  #book-categories {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
   }
   .book-item h3 {
     font-size: 1.5rem;
   }
-  .view-collection-button{
+  .view-collection-button {
     font-size: 1.1em;
-     border-radius: 25px
+    border-radius: 25px;
   }
-    /* Footer */
-    .copyright {
-      font-size: 1.4rem;
-    }
+  /* Footer */
+  .copyright {
+    font-size: 1.4rem;
+  }
 
-/* NATURE PAGE*/
-#category-books{
- grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
- gap: 40px;
-}
-
+  /* NATURE PAGE*/
+  #category-books {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+  }
 }
 
 /* ACTION AND ADVENTURE */
-.all-categories h1{
+.all-categories h1 {
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* animation for cards */
+@keyframes rotate {
+  0%{--gradient-angle:0deg}
+  100%{--gradient-angle:160deg}    
 }
