@@ -403,7 +403,7 @@ img{
     padding: 0 4%;
   }
   .category-pages-card {
-    background: #fff;
+    background: rgb(185, 184, 184);
     margin-top: 1rem;
     padding: 15px;
     border-radius: 25px;
@@ -429,9 +429,9 @@ img{
 .category-pages-card .category-title{
   font-size: 1.5rem;
   /* color: #18021b; */
-  color: #fff;
+  color: #000;
   /* text-shadow: 2px 2px 3px rgb(242, 110, 247); */
-  text-shadow: 2px 2px 7px #fff;
+  text-shadow: 2px 2px 7px #000;
 }
 
   .category-pages-card .author {
@@ -496,9 +496,6 @@ img{
 }
 /* Mobile Large */
 @media (min-width: 425px) {
-  body {
-    background-color: green;
-  }
    .sec-1 h1 {
     font-weight: bold;
     font-size: 1.7rem;
@@ -529,9 +526,6 @@ img{
 }
 /* Tablet */
 @media (min-width: 768px) {
-  body {
-    background-color: yellow;
-  }
    header{
     display: flex;
     justify-content: space-around;
@@ -623,9 +617,6 @@ img{
 }
 /* Laptop */
 @media (min-width: 1024px) {
-  body {
-    background-color: red;
-  }
    .BrandName {
     padding-right: 23rem;
   }
@@ -664,9 +655,6 @@ img{
 }
 /* Laptop Large */
 @media (min-width: 1440px) {
-  body {
-    background-color: lime;
-  }
    .BrandName {
     padding-right: 55rem;
     font-size: 2rem;
