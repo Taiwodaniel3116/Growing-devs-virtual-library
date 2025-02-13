@@ -138,6 +138,16 @@ header {
     font-size: 1.6rem;
     line-height: 1.5rem;
     text-align: center;
+    color: #000;
+  }
+  .BrandName a {
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+  }
+  .BrandName a:hover {
+    filter: drop-shadow(0 0.1em 1em mediumspringgreen);
+    color: white;
   }
   .BrandName span {
     color:mediumspringgreen;
@@ -265,13 +275,13 @@ header {
   }
   .pic-frame {
     width: 120px;
-    height: 120px;
+    height: 100px;
     background-color: mediumspringgreen;
     position: absolute;
     right: 0;
     bottom: 12px;
     border-radius: 20px;
-    transform: rotate(20deg);
+    transform: rotate(15deg);
   }
 
   /* Categories */
