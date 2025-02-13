@@ -57,10 +57,11 @@
 button {
   cursor: pointer;
 }
+a:hover,
 button:hover {
   transform: scaleX(95%);
   transition: 0.6s;
-  filter: drop-shadow(0 0.5em 0.5em black);
+  filter: drop-shadow(0 0.1em 1em black);
 }
 body {
   background-color: #fff;
@@ -85,17 +86,17 @@ nav ul li a {
 .dropdown a {
   display: block;
   text-decoration: none;
-  padding-left: 10px;
-  /* color: black; */
+  color: black;
 }
 .dropdown .dropdown-content {
-  /* border: 2px solid black; */
+  border: 2px solid black;
+  border-radius: 8px;
   display: none;
 }
 .dropdown:hover .dropdown-content {
   display: block;
   position: absolute;
-  background-color: dimgrey;
+  background-color:#6dfb5f;
   width: 200px;
   height: auto;
 }
@@ -105,6 +106,7 @@ header {
   align-items: center;
   /* added border to the header */
   border: 1px solid #000;
+  z-index: 99;
 }
 .header-left {
   display: flex;
@@ -172,7 +174,8 @@ header {
     padding-bottom: 10px;
   }
   .dropdown .dropdown-content {
-    border: 2px solid black;
+    border: 2px solid #000;
+    text-align: center;
     display: none;
   }
   .dropdown:hover .dropdown-content {
@@ -228,11 +231,13 @@ header {
 
   /* ///////// Main /////////// */
   .sec-1 {
+    /* background-color: rgb(238, 231, 231); */
     display: flex;
     justify-content: space-between;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding-left: 0.5rem;
     padding-top: 2rem;
+    position: relative;
   }
   .sec-1 h1 {
     font-weight: bold;
@@ -249,36 +254,49 @@ header {
     height: 35px;
     padding-left: 10px;
     font-size: 0.7rem;
-    background-color: bisque;
-    background-color: rgb(241, 236, 236);
+    background-color: rgb(223, 216, 216);
     outline: none;
   }
   .sec-1 img {
     width: 150px;
     height: 150px;
     padding-right: 0.5rem;
+    z-index: 1;
+  }
+  .pic-frame {
+    width: 120px;
+    height: 120px;
+    background-color: mediumspringgreen;
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    border-radius: 20px;
+    transform: rotate(20deg);
   }
 
   /* Categories */
   .sec-2,
   .sec-3 {
     margin-top: 2rem;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .sec-2 .categories,
   .sec-3 .testimonials {
     text-align: center;
     width: max-content;
     height: max-content;
-    padding: 3px 10px;
+    padding: 5px 15px;
     border-radius: 15px;
     background-color: rgb(235, 231, 231);
+    color: #000;
     margin: auto;
+    font-weight: normal;
   }
   .sec-2 h2,
   .sec-3 h2 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
   }
   /*  */
   #book-categories {
@@ -300,10 +318,10 @@ header {
   .book-item h3 {
     font-size: 1.2em;
     margin-top: 0;
-    color: #000;
+    color: #fff;
   }
   .view-collection-button {
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
     border-radius: 20px;
     border: 1px groove #fff;
@@ -481,6 +499,14 @@ img{
     height: 170px;
     padding-right: 0;
   }
+  .pic-frame {
+    width: 140px;
+    height: 140px;
+    bottom: 12px;
+    right: 15px;
+    transform: rotate(17deg);
+  }
+
   /* Categories */
   .book-item {
     height: 380px;
@@ -506,6 +532,14 @@ img{
   .sec-1 img {
     width: 190px;
     height: 190px;
+  }
+  .pic-frame {
+    width: 150px;
+    height: 140px;
+    border-radius: 18px;
+    transform: rotate(19deg);
+    bottom: 16px;
+    right: 10px;
   }
   /* Categories */
   .book-item {
@@ -567,10 +601,19 @@ img{
     height: 45px;
   }
   .sec-1 img {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     box-shadow: 3px 3px 1px #000;
   }
+  .pic-frame {
+    width: 230px;
+    height: 210px;
+    border-radius: 25px;
+    transform: rotate(9deg);
+    bottom: 10px;
+    right: 90px;
+  }
+  /*  */
   .sec-2 .categories,
   .sec-3 .testimonials {
     padding: 4px 12px;
@@ -582,7 +625,8 @@ img{
     font-size: 1.8rem;
   }
   /* // */
-  #book-categories {
+
+    #book-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
@@ -641,6 +685,14 @@ img{
     width: 350px;
     height: 350px;
   }
+  .pic-frame {
+    width: 290px;
+    height: 260px;
+    border-radius: 25px;
+    transform: rotate(9deg);
+    bottom: 15px;
+    right: 100px;
+  }
   /* Categories */
   .book-item {
     height: 450px;
@@ -686,6 +738,14 @@ img{
   .sec-1 img {
     width: 700px;
     height: 700px;
+  }
+  .pic-frame {
+    width: 600px;
+    height: 550px;
+    border-radius: 70px;
+    transform: rotate(20deg);
+    bottom: 65px;
+    right: 200px;
   }
   /*  */
   .sec-2 .categories,
